@@ -11,10 +11,62 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+    <style>
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+                margin-left: 0;
+                padding-left: 30px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+        #blog-content {
+            max-width: 800px;
+        }
+        #blog-list {
+            margin-bottom: 30px;
+        }
+        #blog-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #blog-list li {
+            margin-bottom: 15px;
+        }
+        #blog-list a {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        #blog-list a:hover {
+            color: #4a90e2;
+        }
+        #blog-list a::before {
+            content: '\f15c'; /* Font Awesome icon for document */
+            font-family: 'FontAwesome';
+            margin-right: 10px;
+            color: #4a90e2;
+        }
+    </style>
 </head>
 <body id="page-top" class="index">
     <!-- Navigation -->
@@ -44,7 +96,7 @@
                 <div class="col-md-12">
                     <div id="blog-list">
                         <ul>
-                            <li><a href="#" data-blog="blog1.html">The Evolution of SAT Solvers: From DPLL to Modern CDCL</a></li>
+                            <li><a href="#" data-blog="blog1.html">The Evolution of SAT Solvers: From DPLL to Modern CDCL - Part 1</a></li>
                         </ul>
                     </div>
                     <div id="blog-content"></div>
