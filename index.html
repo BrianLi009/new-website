@@ -1,366 +1,299 @@
 <!DOCTYPE html>
-<html>
-    
-    <head>
-        <meta charset="utf-8"/>
-        <title>[ Brian Li @ GaTech ]</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="css/font-awesome.min.css"/>
-        
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet"/>
-        <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-        
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-         <script src="js/html5shiv.js"></script>
-         <script src="js/respond.min.js"></script>
-         <![endif]-->
-        
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
-        <script src="js/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/menucollapse.js"></script>
-        <script type="text/javascript" src="js/arrow78.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Brian Zhengyu Li — Georgia Tech</title>
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MX2YEXR0DT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta name="description" content="Brian Zhengyu Li is a PhD candidate in Computer Science at Georgia Tech working on automated reasoning, SAT/SMT solvers, computer algebra systems, and machine learning."/>
+    <meta name="author" content="Brian Zhengyu Li"/>
+    <link rel="canonical" href="https://404briannotfound.tech/"/>
 
-  gtag('config', 'G-MX2YEXR0DT');
-</script>
-    
-    <body id="page-top" class="index">
-        
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                Home<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
-                                <li><a target="_blank" href="brian.pdf">CV (PDF)</a></li>
-                            </ul>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Publications</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-employment-content').show();" href="#employment">Employment</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a href="blog.html">Blog</a>
-                        </li>
-                        <li class="page-scroll">
-                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
-                                <span class="glyphicon glyphicon-search"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-                
-                <!-- search box submenu -->
-                <div class="collapse" id="bs-example-navbar-collapse-2">
-                    <gcse:search></gcse:search>
-                        </div>
-                
-            </div><!-- /.container-fluid -->
-        </nav>
-        
-        <section>
-            <!-- Place this tag where you want the search results to render -->
-            <gcse:searchresults-only></gcse:searchresults-only>
-                </section>
-        
-        <!-- Home Section -->
-        <section  name="home" id="home" style="margin-top:40px">
-            <div class="container">
-                <div align="left" class="col-md-3">
-                    <a target="_blank" href="images/brian.png">
-                        <img id="mobile-img" src="images/brian.png" width="220" height="300" style="object-fit: cover; object-position: center;" alt=""></a>
-                </div>
-                <div align="left" class="col-md-4">
-                    <h2>Brian Zhengyu Li
-                        <h5><i>Georgia Institute of Technology</i></h5>
-                    </h2>
-                    
-                    <h4>PhD Candidate in Computer Science<br>
-                        <a href="https://www.cc.gatech.edu/">College of Computing</a><br>
-                        <a href="https://www.gatech.edu/">Georgia Institute of Technology</a><br>
-                        <a href="https://avservices.gatech.edu/building/153/2319/">Office: Klaus 2319</a><br>
-                        Email:
-                        <script language="JavaScript">
-                            <!--
-                            document.write("&nbsp;");
-                            spiderjam('zli3081','gatech.edu');
-                            -->
-                            </script><br/>
-                        Advisor: <a target="_blank" href="https://ece.uwaterloo.ca/~vganesh/">Vijay Ganesh</a><br>
-                    </h4>
-                    <h4><i>Research Interest: Automated Reasoning + Machine Learning, SAT/SMT Solvers + Computer Algebra Systems, Logic in Computer Science, Graph Theory & Combinatorics </i>
-                    
-                </div>
-                
-                <i class="twittertop" style="display:none;" id="t1">
-                    <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
-                        <center><a class="twitter-timeline" href="https://twitter.com/BrianforPhD" data-chrome="nofooter" data-widget-id="346662554203992065" data-width="900"
-                            data-height="300">Tweets
-                            by @BrianforPhD</a>
-                        <script>!function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + "://platform.twitter.com/widgets.js";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, "script", "twitter-wjs");</script></center>
-                    </div>
-                </i>
-                
-                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
-                <b class="expandshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
-                </b>
-                <b class="collapseshow" style="display:none;" id="tab-1">
-                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
-                </b>
-                
+    <meta property="og:type" content="profile"/>
+    <meta property="og:title" content="Brian Zhengyu Li — Georgia Tech"/>
+    <meta property="og:description" content="PhD candidate at Georgia Tech. Automated reasoning, SAT/SMT + computer algebra, ML for combinatorics."/>
+    <meta property="og:url" content="https://404briannotfound.tech/"/>
+    <meta property="og:image" content="https://404briannotfound.tech/images/brian.png"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@brianzhengyuli"/>
+
+    <link rel="icon" href="images/brian.png"/>
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1a1a1a;
+            --muted: #5b6470;
+            --accent: #1e3a8a;
+            --accent-hover: #2a4ec0;
+            --border: #e5e7eb;
+            --card: #f7f8fa;
+            --badge-bg: #fff7d6;
+            --badge-fg: #6a4a00;
+            --badge-border: #e7c66b;
+            --tag-bg: #e7f3ee;
+            --tag-fg: #176a3b;
+            --tag-border: #b8dcc6;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #14171c;
+                --fg: #e8eaed;
+                --muted: #9aa3af;
+                --accent: #8ab4ff;
+                --accent-hover: #b3cdff;
+                --border: #2a2f37;
+                --card: #1c2026;
+                --badge-bg: #3a2f0d;
+                --badge-fg: #ffd870;
+                --badge-border: #5a4612;
+                --tag-bg: #173024;
+                --tag-fg: #8fd9af;
+                --tag-border: #265a3f;
+            }
+        }
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--fg);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { color: var(--accent-hover); text-decoration: underline; }
+        h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5rem; }
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; margin-top: 2rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+        h3 { font-size: 1.15rem; margin-top: 1.5rem; color: var(--muted); }
+
+        nav.site-nav {
+            position: sticky; top: 0; z-index: 100;
+            background: var(--bg); border-bottom: 1px solid var(--border);
+            backdrop-filter: saturate(180%) blur(8px);
+            -webkit-backdrop-filter: saturate(180%) blur(8px);
+        }
+        nav.site-nav .inner {
+            max-width: 900px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.75rem 1.25rem;
+        }
+        nav.site-nav .brand { font-weight: 600; color: var(--fg); }
+        nav.site-nav ul {
+            list-style: none; padding: 0; margin: 0;
+            display: flex; gap: 1.25rem; flex-wrap: wrap;
+        }
+        nav.site-nav a { color: var(--muted); font-size: 0.95rem; }
+        nav.site-nav a:hover { color: var(--accent); text-decoration: none; }
+
+        main { max-width: 900px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            align-items: start;
+            margin-top: 1.5rem;
+        }
+        .hero img {
+            width: 200px; height: 250px;
+            object-fit: cover; object-position: center;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        .hero .name { margin: 0 0 0.25rem; }
+        .hero .affil { color: var(--muted); font-style: italic; margin: 0 0 1rem; }
+        .hero .meta { margin: 0 0 0.75rem; font-size: 0.95rem; }
+        .hero .meta div { margin-bottom: 0.1rem; }
+        .hero .interests { color: var(--muted); font-size: 0.95rem; font-style: italic; margin-top: 0.75rem; }
+        .hero .links {
+            margin-top: 0.85rem;
+            display: flex; flex-wrap: wrap; gap: 0.75rem;
+            font-size: 0.92rem;
+        }
+        .hero .links a { color: var(--accent); }
+        @media (max-width: 640px) {
+            .hero { grid-template-columns: 1fr; }
+            .hero img { width: 160px; height: 200px; }
+        }
+
+        .badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0.5rem 0 1.25rem; }
+        .badge {
+            display: inline-block;
+            padding: 0.18rem 0.6rem;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            border: 1px solid var(--badge-border);
+            background: var(--badge-bg);
+            color: var(--badge-fg);
+        }
+        .badge a { color: inherit; text-decoration: none; }
+        .badge a:hover { text-decoration: underline; }
+        .tag {
+            display: inline-block;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            border: 1px solid var(--tag-border);
+            background: var(--tag-bg);
+            color: var(--tag-fg);
+            margin-right: 0.4rem;
+            vertical-align: 0.05em;
+        }
+
+        ul.papers, ul.bullets { padding-left: 1.25rem; margin: 0.5rem 0 1rem; }
+        ul.papers li, ul.bullets li { margin-bottom: 0.65rem; }
+        ul.papers li { line-height: 1.55; }
+
+        footer {
+            max-width: 900px; margin: 0 auto;
+            padding: 1.25rem; border-top: 1px solid var(--border);
+            color: var(--muted); font-size: 0.85rem; text-align: center;
+        }
+        footer a { color: var(--muted); text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<nav class="site-nav">
+    <div class="inner">
+        <a class="brand" href="#home">Brian Zhengyu Li</a>
+        <ul>
+            <li><a href="#intro">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#employment">News</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="brian.pdf" target="_blank" rel="noopener">CV</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+    <section id="home" class="hero">
+        <a href="images/brian.png"><img src="images/brian.png" alt="Photo of Brian Zhengyu Li"/></a>
+        <div>
+            <h1 class="name">Brian Zhengyu Li</h1>
+            <p class="affil">Georgia Institute of Technology</p>
+            <div class="meta">
+                <div>PhD Candidate in Computer Science</div>
+                <div><a href="https://www.cc.gatech.edu/">College of Computing</a>, <a href="https://www.gatech.edu/">Georgia Tech</a></div>
+                <div>Office: <a href="https://avservices.gatech.edu/building/153/2319/">Klaus 2319</a></div>
+                <div>Advisor: <a href="https://ece.uwaterloo.ca/~vganesh/" target="_blank" rel="noopener">Vijay Ganesh</a></div>
+                <div>Email: <span id="email"></span></div>
             </div>
-        </section>
-        
-        <!-- Home Section -->
-        <section name="intro" id="intro">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    <!--<h2>Welcome!</h2>-->
-                    
-                    <b class="noshow" style="display:none;" id="tab-1">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    
-                    <div class="allshow" style="display:none;" id="tab-intro-content">
-                        <hr class="star-primary">
-                        
-                        <p class="lead">
-                        I am a PhD Candidate in Computer Science at <a target="_blank" href="https://www.gatech.edu/">Georgia Institute of Technology</a> advised by <a target="_blank" href="https://vganesh1.github.io/">Professor Vijay Ganesh</a>. I hold a Bachelor of Science in Mathematics from the <a href="https://www.utoronto.ca/" target="_blank">University of Toronto</a> and a master degree in Computational Mathematics from the <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>.
-                        </p>
-                        
-                        <p class="lead">
-                        I work on combining (logical) <strong>reasoning</strong> and (machine) <strong>learning</strong> to build automated reasoning systems that solve open Math and Physics problems. More concretely, one of my ongoing work is to combine SAT solvers' search capabilities with Computer Algebra Systems' mathematical domain knowledge to solve hard combinatorial problems.
-                        </p>
-                        <p>
-                        
-                        
-                    </div>
-                    
-                </div>
+            <p class="interests">Research interests: Automated Reasoning + Machine Learning · SAT/SMT Solvers + Computer Algebra Systems · Logic in Computer Science · Graph Theory &amp; Combinatorics</p>
+            <div class="links">
+                <a href="https://scholar.google.ca/citations?user=u_XSFyEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="https://twitter.com/brianzhengyuli" target="_blank" rel="noopener">X (@brianzhengyuli)</a>
+                <a href="brian.pdf" target="_blank" rel="noopener">CV (PDF)</a>
             </div>
-        </section>
-        
-        <div class="twitterlow" style="display:none;" id="t1">
-            <!-- News Section -->
-            <section  name="news"  id="news">
-                <div class="container lead">
-                    <div style="text-align: left; margin-top:10px" class="col-md-12">
-                        
-                        <b class="noshow" style="display:none;" id="tab-2">
-                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                        </b>
-                        <b class="allshow" style="display:none;" id="tab-news-content">
-                            
-                            <hr class="star-primary">
-                            
-                            <h2>News</h2>
-                            <center><a class="twitter-timeline" href="https://twitter.com/BrianforPhD" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
-                                by @BrianforPhD</a>
-                            <script>!function (d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                                if (!d.getElementById(id)) {
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = p + "://platform.twitter.com/widgets.js";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }
-                            }(document, "script", "twitter-wjs");
-                            </script>
-                            </center>
-                        </b>
-                    </div>
-                </div>
-            </section>
+        </div>
+    </section>
+
+    <section id="intro">
+        <h2>About</h2>
+        <p>
+            I am a PhD Candidate in Computer Science at <a href="https://www.gatech.edu/" target="_blank" rel="noopener">Georgia Institute of Technology</a> advised by <a href="https://vganesh1.github.io/" target="_blank" rel="noopener">Professor Vijay Ganesh</a>. I hold a Bachelor of Science in Mathematics from the <a href="https://www.utoronto.ca/" target="_blank" rel="noopener">University of Toronto</a> and a master's degree in Computational Mathematics from the <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>.
+        </p>
+        <p>
+            I work on combining (logical) <strong>reasoning</strong> and (machine) <strong>learning</strong> to build automated reasoning systems that solve open Math and Physics problems. More concretely, one ongoing line of work combines SAT solvers' search capabilities with Computer Algebra Systems' mathematical domain knowledge to solve hard combinatorial problems.
+        </p>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <div class="badges">
+            <span class="badge"><a href="https://scholar.google.ca/citations?user=u_XSFyEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Citations: 237</a></span>
+            <span class="badge"><a href="https://en.wikipedia.org/wiki/Erd%C5%91s_number" target="_blank" rel="noopener">Erdős #: 3</a></span>
         </div>
 
-        <!-- Research Section -->
-        <section  name="publications" id="publications">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    
-                    <b class="noshow" style="display:none;" id="tab-3">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    <div class="allshow" style="display:none;" id="tab-publications-content">
-                        <hr class="star-primary">
-                        
-                        <h2>Selected Publications
-                        <h4>
-                            <span class="label label-warning">
-                                <a target="_blank" href="https://scholar.google.ca/citations?user=u_XSFyEAAAAJ&hl=en"><font color=white>Citations</font></a>: 237
-                            </span>&nbsp;
-                            <span class="label label-warning">
-                                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 3
-                            </span>&nbsp;
-                            
-                        </h4>
-                        <h3>2026</h3>
-                        <ul>
-                            <li><span class="label label-success">Preprint</span> <a target="_blank" href="https://arxiv.org/pdf/2605.08498">"MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs"</a>, Viresh Pati, <b>Zhengyu Li</b>, Piyush Jha, Rahul Garg, Yatharth Sejpal, Vijay Ganesh.</li>
-                            <li><span class="label label-success">Preprint</span> <a target="_blank" href="https://arxiv.org/pdf/2604.19947v1">"SAT + NAUTY: Orderly Generation of Small Kochen-Specker Sets Containing the Smallest State-independent Contextuality Set"</a>, <b>Zhengyu Li</b>, Curtis Bright, Stefan Trandafir, Ad&aacute;n Cabello, Vijay Ganesh.</li>
-                        </ul>
-                        <h3>2025</h3>
-                        <ul>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://arxiv.org/pdf/2502.06055">"Verified Certificates via SAT and Computer Algebra Systems for the Ramsey R(3,8) and R(3,9) Problems"</a>, <b>Zhengyu Li</b>, Conor Duggan, Curtis Bright, Vijay Ganesh. <b>IJCAI 2025 (Acceptance Rate = 19.3%).</b></li>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://arxiv.org/abs/2501.08328">"PokerBench: Training Large Language Models to Become Professional Poker Players"</a>, Richard Zhuang, Akshat Gupta, Richard Yang, Aniket Rahane, <b>Zhengyu Li</b>, Gopala Anumanchipalli. <b>AAAI 2025 (Acceptance Rate = 23.4%).</b></li>
-                        </ul>
-                        <h3>2024</h3>
-                        <ul>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://www.ijcai.org/proceedings/2024/210">"A SAT Solver and Computer Algebra Attack on the Minimum Kochen-Specker Problem"</a>, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>IJCAI 2024 (Acceptance Rate = 15%).</b></li>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://ojs.aaai.org/index.php/AAAI/article/view/30437">"A SAT + Computer Algebra System Verification of the Ramsey Problem R(3, 8) (Student Abstract)"</a>, Conor Duggan, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>AAAI 2024.</b></li>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://ojs.aaai.org/index.php/AAAI/article/view/30472">"A SAT Solver and Computer Algebra Attack on the Minimum Kochen-Specker Problem (Student Abstract)"</a>, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>AAAI 2024.</b></li>
-                            <li><span class="label label-success">Preprint</span> <a target="_blank" href="https://arxiv.org/abs/2401.13770">"AlphaMapleSAT: An MCTS-based Cube-and-Conquer SAT Solver for Hard Combinatorial Problems"</a>, Piyush Jha, <b>Zhengyu Li</b>, Zhengyang Lu, Curtis Bright, and Vijay Ganesh</li>
+        <h3>2026</h3>
+        <ul class="papers">
+            <li><span class="tag">Preprint</span> <a href="https://arxiv.org/pdf/2605.08498" target="_blank" rel="noopener">"MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs"</a>, Viresh Pati, <b>Zhengyu Li</b>, Piyush Jha, Rahul Garg, Yatharth Sejpal, Vijay Ganesh.</li>
+            <li><span class="tag">Preprint</span> <a href="https://arxiv.org/pdf/2604.19947v1" target="_blank" rel="noopener">"SAT + NAUTY: Orderly Generation of Small Kochen-Specker Sets Containing the Smallest State-independent Contextuality Set"</a>, <b>Zhengyu Li</b>, Curtis Bright, Stefan Trandafir, Adán Cabello, Vijay Ganesh.</li>
+        </ul>
 
-                        </ul>
-                        <h3>2022</h3>
-                        <ul>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://ceur-ws.org/Vol-3458/paper6.pdf">"An SC-Square Approach to the Minimum
-                                Kochen–Specker Problem"</a>, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>SC-Square Workshop, Part of IJCAR 22.</b></li>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0048969722009950">"Automatic quantification and classification of microplastics in scanning electron micrographs via deep learning"</a>, Shi, B., Patel, M., Yu, D., Yan, J., <b>Li</b>, Z., Petriw, D., ... & Howe, J. Y. (2022). <b>Science of The Total Environment.</b></li>
-                        </ul>
-                        <h3>2021</h3>
-                        <ul>
-                            <li><span class="label label-success">Published</span> <a target="_blank" href="https://doi.org/10.1080/10724117.2021.1881388">"In Tetracycles: a SET Deck Magic Trick"</a>, Parker Glynn-Adey, <b>Zhengyu Li</b>. <b>Math Horizons.</b></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Employment Section -->
-        <section name="employment" id="employment">
-            <div class="container lead">
-                <div style="text-align: left; margin-top:10px" class="col-md-12">
-                    
-                    <b class="noshow" style="display:none;" id="tab-4">
-                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-employment-content').toggle();">Employment <span class="glyphicon glyphicon-chevron-down"></span></button>
-                    </b>
-                    <div class="allshow" style="display:none;" id="tab-employment-content">
-                        <hr class="star-primary">
-                        
-                        <h2>Employment</h2>
-                        <ul>
-                            <li><strong>Summer 2025:</strong> <strong>Applied Scientist Intern</strong> for the <a href="https://www.linkedin.com/posts/mattgarman_scientists-across-amazon-are-revolutionizing-activity-7361849686959276033-iBHt/" target="_blank"><strong>Automated Reasoning - NeuroSymbolic AI Team</strong></a> at <strong>Amazon Web Services</strong> in Boston. I led projects on heuristics generation in SAT solvers with Large Language Models and evolutionary algorithms, and combining LLM Tree of Thoughts with SAT solver feedback to discover new matrix multiplication algorithms.</li>
-                            <li><strong>Summer 2023:</strong> <strong>Machine Learning Research Intern</strong> for <a href="https://phenomic.ai/" target="_blank"><strong>Phenomic AI</strong></a> in Toronto, Canada. I led a project to enhance spatial gene expression analysis using deep learning.</li>
-                            <li><strong>Summer 2022:</strong> <strong>Data Science and Advanced Analytics Intern</strong> for <strong>TD Insurance</strong> in Toronto, Canada. I implemented a predictive model using machine learning and PCA on large-scale customer data.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Awards Section -->
-         <section  name="awards" id="awards">
-             <div class="container lead">
-                 <div style="text-align: left; margin-top:10px" class="col-md-12">
-                     
-                     <b class="noshow" style="display:none;" id="tab-6">
-                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
-                     </b>
-                     <div class="allshow" style="display:none;" id="tab-awards-content">
-                         
-                         <hr class="star-primary">
-                         <h2>Awards and Honors <a href="brian.pdf" class="btn btn-primary">More &raquo;</a></h2>
-                         <ul>
-                             <li>
-                                IJCAI Travel Grant -  the 33rd International Joint Conference on Artificial Intelligence</span>
-                             </li>
-                             <li>
-                                Student Travel Scholarship -  36th International Conference on Computer Aided Verification</span>
-                             </li>
-                             <li>
-                                Resource Allocation Competitions ($18,841) -  Digital Research Alliance</span>
-                             </li>
-                             <li>
-                                Best Speaker Award for Master Project Presentation -  University of Waterloo</span>
-                             </li>
-                             <li>
-                                Ontario Graduate Fellowship -  University of Waterloo</span>
-                             </li>
-                             <li>
-                                Dean's List Scholar -  University of Toronto</span>
-                             </li>
-                             <li>
-                                Best VR/AR Application -  HackWestern Hackathon 2020</span>
-                             </li>
-                             <li>
-                                Best Machine Learning Application Award -  Hack the Six Hackathon 2019</span>
-                             </li>
-                             <li>
-                                Third Place -  Scotiabank & University of Toronto Big Data & A.I. Competition 2019</span>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
+        <h3>2025</h3>
+        <ul class="papers">
+            <li><span class="tag">Published</span> <a href="https://arxiv.org/pdf/2502.06055" target="_blank" rel="noopener">"Verified Certificates via SAT and Computer Algebra Systems for the Ramsey R(3,8) and R(3,9) Problems"</a>, <b>Zhengyu Li</b>, Conor Duggan, Curtis Bright, Vijay Ganesh. <b>IJCAI 2025 (Acceptance Rate = 19.3%).</b></li>
+            <li><span class="tag">Published</span> <a href="https://arxiv.org/abs/2501.08328" target="_blank" rel="noopener">"PokerBench: Training Large Language Models to Become Professional Poker Players"</a>, Richard Zhuang, Akshat Gupta, Richard Yang, Aniket Rahane, <b>Zhengyu Li</b>, Gopala Anumanchipalli. <b>AAAI 2025 (Acceptance Rate = 23.4%).</b></li>
+        </ul>
 
-        
-        <hr class="star-primary">
-        <footer>
-            <small>
-                <center>
-                    © 2015 | D. Zeinalipour. Credits: AR template
-                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
-                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
-                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
-                            https://github.com/dmsl/academic-responsive-template
-                        </a> ]
-                    </div>
-                </center>
-            </small>
-        </footer>
-        
-    </body>
-    
+        <h3>2024</h3>
+        <ul class="papers">
+            <li><span class="tag">Published</span> <a href="https://www.ijcai.org/proceedings/2024/210" target="_blank" rel="noopener">"A SAT Solver and Computer Algebra Attack on the Minimum Kochen-Specker Problem"</a>, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>IJCAI 2024 (Acceptance Rate = 15%).</b></li>
+            <li><span class="tag">Published</span> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30437" target="_blank" rel="noopener">"A SAT + Computer Algebra System Verification of the Ramsey Problem R(3, 8) (Student Abstract)"</a>, Conor Duggan, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>AAAI 2024.</b></li>
+            <li><span class="tag">Published</span> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/30472" target="_blank" rel="noopener">"A SAT Solver and Computer Algebra Attack on the Minimum Kochen-Specker Problem (Student Abstract)"</a>, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>AAAI 2024.</b></li>
+            <li><span class="tag">Preprint</span> <a href="https://arxiv.org/abs/2401.13770" target="_blank" rel="noopener">"AlphaMapleSAT: An MCTS-based Cube-and-Conquer SAT Solver for Hard Combinatorial Problems"</a>, Piyush Jha, <b>Zhengyu Li</b>, Zhengyang Lu, Curtis Bright, and Vijay Ganesh.</li>
+        </ul>
+
+        <h3>2022</h3>
+        <ul class="papers">
+            <li><span class="tag">Published</span> <a href="https://ceur-ws.org/Vol-3458/paper6.pdf" target="_blank" rel="noopener">"An SC-Square Approach to the Minimum Kochen–Specker Problem"</a>, <b>Zhengyu Li</b>, Curtis Bright, and Vijay Ganesh. <b>SC-Square Workshop, Part of IJCAR 22.</b></li>
+            <li><span class="tag">Published</span> <a href="https://www.sciencedirect.com/science/article/pii/S0048969722009950" target="_blank" rel="noopener">"Automatic quantification and classification of microplastics in scanning electron micrographs via deep learning"</a>, Shi, B., Patel, M., Yu, D., Yan, J., <b>Li</b>, Z., Petriw, D., ... &amp; Howe, J. Y. (2022). <b>Science of The Total Environment.</b></li>
+        </ul>
+
+        <h3>2021</h3>
+        <ul class="papers">
+            <li><span class="tag">Published</span> <a href="https://doi.org/10.1080/10724117.2021.1881388" target="_blank" rel="noopener">"In Tetracycles: a SET Deck Magic Trick"</a>, Parker Glynn-Adey, <b>Zhengyu Li</b>. <b>Math Horizons.</b></li>
+        </ul>
+    </section>
+
+    <section id="employment">
+        <h2>News</h2>
+        <ul class="bullets">
+            <li><strong>May 2026:</strong> Passed my PhD qualifier and became a PhD Candidate.</li>
+        </ul>
+    </section>
+
+    <section id="awards">
+        <h2>Awards and Honors <a href="brian.pdf" target="_blank" rel="noopener" style="font-size: 0.9rem; font-weight: normal;">(more in CV)</a></h2>
+        <ul class="bullets">
+            <li>IJCAI Travel Grant — 33rd International Joint Conference on Artificial Intelligence</li>
+            <li>Student Travel Scholarship — 36th International Conference on Computer Aided Verification</li>
+            <li>Resource Allocation Competitions ($18,841) — Digital Research Alliance</li>
+            <li>Best Speaker Award for Master Project Presentation — University of Waterloo</li>
+            <li>Ontario Graduate Fellowship — University of Waterloo</li>
+            <li>Dean's List Scholar — University of Toronto</li>
+            <li>Best VR/AR Application — HackWestern Hackathon 2020</li>
+            <li>Best Machine Learning Application Award — Hack the Six Hackathon 2019</li>
+            <li>Third Place — Scotiabank &amp; University of Toronto Big Data &amp; A.I. Competition 2019</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Brian Zhengyu Li. Built on the <a href="https://github.com/dmsl/academic-responsive-template" target="_blank" rel="noopener">AR template</a> (CC BY 4.0).
+</footer>
+
+<script>
+    (function () {
+        var u = 'zli3081', d = 'gatech.edu';
+        var el = document.getElementById('email');
+        if (el) {
+            var a = document.createElement('a');
+            a.href = 'mailto:' + u + '@' + d;
+            a.textContent = u + '@' + d;
+            el.appendChild(a);
+        }
+    })();
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MX2YEXR0DT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MX2YEXR0DT');
+</script>
+
+</body>
 </html>
